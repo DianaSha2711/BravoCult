@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAVO CULT — Креативная фотография</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Фоновый шум -->
+    <div class="noise"></div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <a href="/" class="logo">
+            BRAVO<span class="logo-cross">&#10013;</span>CULT
+        </a>
+        <nav class="nav">
+            <a href="#work">РАБОТЫ</a>
+            <a href="#about">О НАС</a>
+            <a href="#contact">КОНТАКТЫ</a>
+        </nav>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero" style="background-image: url('img/hero-bg.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-icon">&#10013;</div>
+            <h1 class="hero-title">BRAVO<br>CULT</h1>
+            <p class="hero-subtitle">Креативная и тематическая фотография</p>
+            <a href="#work" class="btn-outline">ПОРТФОЛИО</a>
+        </div>
+    </section>
+
+    <!-- Работы -->
+    <section id="work" class="section">
+        <h2 class="section-title">ИЗБРАННЫЕ РАБОТЫ</h2>
+        <div class="grid">
+            <div class="grid-item tall">
+                <img src="img/photo-1.jpg" alt="Работа 1" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-2.jpg" alt="Работа 2" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-3.jpg" alt="Работа 3" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-4.jpg" alt="Работа 4" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item tall">
+                <img src="img/photo-5.jpg" alt="Работа 5" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-6.jpg" alt="Работа 6" loading="lazy" onclick="openLightbox(this.src)" class="crop-top">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-7.jpg" alt="Работа 7" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-8.jpg" alt="Работа 8" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item tall">
+                <img src="img/photo-9.jpg" alt="Работа 9" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-10.jpg" alt="Работа 10" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-11.jpg" alt="Работа 11" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-12.jpg" alt="Работа 12" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-13.jpg" alt="Работа 13" loading="lazy" onclick="openLightbox(this.src)" class="crop-top">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-14.jpg" alt="Работа 14" loading="lazy" onclick="openLightbox(this.src)">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo-15.jpg" alt="Работа 15" loading="lazy" onclick="openLightbox(this.src)" class="crop-top">
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="section about">
+        <h2 class="section-title">&#10013; О НАС &#10013;</h2>
+        <div class="about-content">
+            <div class="about-image" style="background-image: url('img/hero-bg.jpg');"></div>
+            <div class="about-text">
+                <p>BRAVO CULT — визуальная культура, которая передаёт энергию.</p>
+                <p>Необычные идеи для съёмки здесь приветствуются максимально.</p>
+                <p class="about-quote">«Люблю сказки и сама их снимать».</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">&#10013; КОНТАКТЫ &#10013;</h2>
+        <div class="contact-content">
+            <p>Для записи, сотрудничества и вопросов:</p>
+            <a href="mailto:dbravo2711@gmail.com" class="btn-outline">dbravo2711@gmail.com</a>
+            <div class="social-links">
+                <a href="https://instagram.com/d_bravo888" target="_blank">INSTAGRAM</a>
+                <a href="https://t.me/dianabravo777" target="_blank">TELEGRAM</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p>&copy; 2025 BRAVO CULT. Все права защищены.</p>
+    </footer>
+
+    <!-- Лайтбокс -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Просмотр фото">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
